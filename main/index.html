@@ -4,8 +4,50 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/src/output.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"
+    />
     <title>Form Validation</title>
   </head>
   <body>
+    <div class="w-full h-[100vh] bg-[#141a34] flex justify-center items-center">
+      <form
+        action=""
+        class="w-[90%] max-w-[500px] px-[30px] pt-[50px] pb-5 bg-white rounded-[4px] shadow-[0_4px_30px_rgba(0,0,0,0.5)] relative"
+      >
+        <i
+          class="fa-solid fa-paper-plane absolute top-0 left-[50%] translate-x-[-50%] translate-y-[-50%] bg-white text-[26px] p-5 rounded-[50%] shadow-[0_0_10px_rgba(0,0,0,0.5)]"
+        ></i>
+        <div class="w-full flex items-center my-2.5 mx-0 relative">
+            <label class="basis-[28%] font-medium" for="">Full Name</label>
+          <input class="basis-[68%] bg-transparent border-0 outline-0 py-2.5 px-0 border-b-[1px] border-b-solid border-b-[#999] text-[#333] text-[16px] placeholder:text-[14px]" type="text" placeholder="Enter your name" name="" id="" />
+          <span class="absolute bottom-[12px] right-[17px] text-[14px] text-red-700"></span>
+        </div>
+        <div class="w-full flex items-center my-2.5 mx-0 relative">
+          <label class="basis-[28%] font-medium" for="">Phone Number</label>
+          <input class="basis-[68%] bg-transparent border-0 outline-0 py-2.5 px-0 border-b-[1px] border-b-solid border-b-[#999] text-[#333] text-[16px] placeholder:text-[14px]" type="tel" name="" id="" placeholder="123 456 7890" />
+          <span class="absolute bottom-[12px] right-[17px] text-[14px] text-red-700"></span>
+        </div>
+        <div class="w-full flex items-center my-2.5 mx-0 relative">
+          <label class="font-medium basis-[28%]" for="">Email Id</label>
+          <input class="basis-[68%] bg-transparent border-0 outline-0 py-2.5 px-0 border-b-[1px] border-b-solid border-b-[#999] text-[#333] text-[16px] placeholder:text-[14px]" type="email" placeholder="Enter Email" />
+          <span class="absolute bottom-[12px] right-[17px] text-[14px] text-red-700"></span>
+        </div>
+        <div class="w-full flex items-center my-2.5 mx-0 relative">
+          <label class="font-medium basis-[28%]" for="">Message</label>
+          <textarea
+          class="basis-[68%] bg-transparent border-0 outline-0 py-2.5 px-0 border-b-[1px] border-b-solid border-b-[#999] text-[#333] text-[16px] placeholder:text-[14px]"
+            name=""
+            rows="5"
+            placeholder="Enter your message"
+            id=""
+          ></textarea> 
+          <span class="absolute bottom-[12px] right-[17px] text-[14px] text-red-700"></span>
+        </div>
+        <button class="bg-[#141a34] text-white rounded-[4px] border-[1px] border-[rgba(255,255,255,0.7)] py-2.5 px-10 outline-0 cursor-pointer block mx-auto mt-[30px] mb-2.5" type="submit">Submit</button>
+        <span class="absolute bottom-[12px] right-[17px] text-[14px] text-red-700"></span>
+      </form>
+    </div>
   </body>
 </html>
